@@ -1,1 +1,54 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>قرمزي</title><style>body{background:#0d0d0d;color:#fff;font-family:Tahoma;margin:0}header{background:#e50914;padding:15px;text-align:center}header h1{margin:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:15px}.card{background:#1a1a1a;border-radius:8px;overflow:hidden;position:relative}.card img{width:100%}.ep{position:absolute;top:8px;right:8px;background:#e50914;padding:3px 8px;border-radius:5px;font-size:12px}a{color:white;text-decoration:none}</style></head><body><header><h1>قرمزي</h1></header><div class="grid"><a href="film.html" class="card"><div class="ep">حلقة 1</div><img src="https://via.placeholder.com/400x600"><div style="padding:8px"><h3>مسلسل تجريبي</h3></div></a></div></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قرمزي - مشاهدة مسلسلات تركية</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body { background: #0d0d0d; color: #fff; font-family: 'Tahoma'; }
+    header { background: #e50914; padding: 15px; text-align: center; position: sticky; top: 0; }
+    header h1 { color: white; font-size: 28px; }
+    .container { padding: 15px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative; }
+    .card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .ep { position: absolute; top: 8px; right: 8px; background: #e50914; padding: 4px 8px; border-radius: 5px; font-size: 12px; font-weight: bold; }
+    .info { padding: 10px; }
+    .info h3 { font-size: 14px; margin: 0; }
+    .info p { font-size: 12px; color: #aaa; margin-top: 4px; }
+    a { text-decoration: none; color: white; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>قرمزي</h1>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      
+      <!-- مسلسل 1 -->
+      <a href="film.html" class="card">
+        <div class="ep">حلقة 1</div>
+        <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse4ZcYPLwGMEoGUFoSA.jpg" alt="">
+        <div class="info">
+          <h3>مسلسل تجريبي</h3>
+          <p>الحلقة الأولى مترجمة</p>
+        </div>
+      </a>
+
+      <!-- مسلسل 2 -->
+      <a href="film.html" class="card">
+        <div class="ep">حلقة 2</div>
+        <img src="https://image.tmdb.org/t/p/w500/4d0PpNI0kmD9g3Q3kV8w4h7iZfO.jpg" alt="">
+        <div class="info">
+          <h3>مسلسل آخر</h3>
+          <p>الحلقة الثانية مترجمة</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
