@@ -11,9 +11,13 @@
     .container { padding: 15px; max-width: 700px; margin: auto; }
     h2 { color: #e50914; margin-bottom: 15px; font-size: 18px; }
     .ad { margin: 20px 0; display: flex; justify-content: center; }
-    .video-box { background: #1a1a; padding: 15px; border-radius: 10px; margin: 15px 0; }
-    iframe { width: 100%; height: 250px; border: none; border-radius: 8px; }
+    .video-box { background: #1a1a1a; padding: 15px; border-radius: 10px; margin: 15px 0; display: none; }
+    iframe { width: 100%; height: 300px; border: none; border-radius: 8px; }
+    .btn { background: #e50914; color: white; padding: 12px 25px; border-radius: 8px; margin: 8px; display: inline-block; text-decoration: none; font-weight: bold; cursor: pointer; border: none; font-size: 16px; }
+    .btn:hover { background: #b20710; }
+    .quality-box { background: #1a1a1a; padding: 20px; border-radius: 10px; margin: 15px 0; }
   </style>
+  <!-- كود Popunder -->
   <script src='https://pl30247611.effectecpmnetwork.com/b8/cd/3a/b8cd3aa379fd1923177c81aecf1e31a2.js'></script>
 </head>
 <body>
@@ -21,6 +25,7 @@
   <div class="container">
     <h2 id="title">جاري التحميل...</h2>
 
+    <!-- إعلان 300x250 فوق -->
     <div class="ad">
       <script type="text/javascript">
 	atOptions = {'key' : 'd3e39363497dd9ae1304054d2b90cb4f','format' : 'iframe','height' : 250,'width' : 300,'params' : {}};
@@ -28,11 +33,19 @@
       <script type="text/javascript" src="//www.highperformanceformat.com/d3e39363497dd9ae1304054d2b90cb4f/invoke.js"></script>
     </div>
 
-    <div class="video-box">
-      <p>اختر الجودة للمشاهدة</p>
+    <!-- صندوق اختيار الجودة -->
+    <div class="quality-box" id="qualityBox">
+      <p style="margin-bottom:15px; font-size:18px;">اختر الجودة للمشاهدة</p>
+      <button class="btn" onclick="showVideo('480')">مشاهدة 480p</button>
+      <button class="btn" onclick="showVideo('720')">مشاهدة 720p HD</button>
+    </div>
+
+    <!-- صندوق الفيديو مخفي فاللول -->
+    <div class="video-box" id="videoBox">
       <iframe id="video" src="" allowfullscreen></iframe>
     </div>
 
+    <!-- إعلان 300x250 تحت -->
     <div class="ad">
       <script type="text/javascript">
 	atOptions = {'key' : 'd3e39363497dd9ae1304054d2b90cb4f','format' : 'iframe','height' : 250,'width' : 300,'params' : {}};
@@ -41,12 +54,26 @@
     </div>
   </div>
   
+  <!-- كود Bar Social -->
   <script src='https://pl30247613.effectecpmnetwork.com/a8/94/01/a89491d6a440f70a9f26ba82777652.js'></script>
+  
   <script>
-    // كيجيب العنوان والفيديو من الرابط
     const params = new URLSearchParams(window.location.search);
+    const videoLink = params.get('video');
     document.getElementById('title').innerText = params.get('title');
-    document.getElementById('video').src = params.get('video');
+
+    // منين يضغط على الزر
+    function showVideo(quality) {
+      // 1. فتح الإعلان Popunder
+      window.open('https://www.effectecpmnetwork.com/your-ad-link', '_blank');
+      
+      // 2. إخفاء الأزرار وإظهار الفيديو
+      document.getElementById('qualityBox').style.display = 'none';
+      document.getElementById('videoBox').style.display = 'block';
+      
+      // 3. تشغيل الفيديو
+      document.getElementById('video').src = videoLink;
+    }
   </script>
 </body>
 </html>
