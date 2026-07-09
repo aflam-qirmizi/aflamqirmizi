@@ -4,39 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>قرمزي</title>
+  <title>قرمزي - مشاهدة مسلسلات</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body { background: #0d0d0d; color: #fff; font-family: 'Tahoma'; }
-    header { background: #e50914; padding: 15px; text-align: center; }
+    header { background: #e50914; padding: 15px; text-align: center; position: sticky; top:0; z-index:10 }
     header h1 { color: white; font-size: 28px; }
-    .container { padding: 15px; }
+    .container { padding: 15px; max-width: 1000px; margin: auto; }
     .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-    .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative; }
-    .card img { width: 100%; height: 270px; object-fit: cover; display: block; background: #222; }
-    .ep { position: absolute; top: 10px; right: 10px; background: #e50914; padding: 5px 12px; border-radius: 5px; font-size: 13px; font-weight: bold; }
-    .info { padding: 12px; }
-    .info h3 { font-size: 16px; margin-bottom: 4px; }
+    @media(min-width:700px){ .grid{grid-template-columns: repeat(5, 1fr);} }
+    .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; position: relative; transition: 0.3s; }
+    .card:hover { transform: scale(1.03); }
+    .card img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .ep { position: absolute; top: 10px; right: 10px; background: #e50914; padding: 6px 12px; border-radius: 5px; font-size: 14px; font-weight: bold; }
+    .info { padding: 12px; text-align: right; }
+    .info h3 { font-size: 15px; margin-bottom: 4px; }
     .info p { font-size: 12px; color: #aaa; }
     a { text-decoration: none; color: white; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>قرمزي</h1>
-  </header>
-
+  <header><h1>قرمزي</h1></header>
   <div class="container">
     <div class="grid">
       
+      <!-- 1 -->
       <a href="daha-17-ep6.html" class="card">
         <div class="ep">حلقة 6</div>
-        <!-- رابط مباشر ديال بوستر DAHA 17 -->
         <img src="https://m.media-amazon.com/images/MV5BMTUyNTc0NzEwNF5BMl5BanBnXkFtZTgwMTI2MTY5OTE@._V1_.jpg" alt="DAHA 17">
-        <div class="info">
-          <h3>DAHA 17</h3>
-          <p>مسلسل في السابعة عشرة الحلقة 6</p>
-        </div>
+        <div class="info"><h3>DAHA 17</h3><p>في السابعة عشرة</p></div>
+      </a>
+
+      <!-- 2 -->
+      <a href="kurulus-ep150.html" class="card">
+        <div class="ep">حلقة 150</div>
+        <img src="https://m.media-amazon.com/images/MV5BOWUxZTkzMzYtNjA5MS00ZDdhLWIyMTYtMTBhYWEzY2Q4YjA0XkEyXkFqcGc@._V1_.jpg" alt="Kurulus">
+        <div class="info"><h3>المؤسس عثمان</h3><p>الموسم 5</p></div>
+      </a>
+
+      <!-- 3 -->
+      <a href="hercai-ep65.html" class="card">
+        <div class="ep">حلقة 65</div>
+        <img src="https://m.media-amazon.com/images/MV5BMzE3YzY0ZTAtZjQ4Yi00MjYwLTg3YTItZjY3MzU4ZjU0MjQyXkEyXkFqcGc@._V1_.jpg" alt="Hercai">
+        <div class="info"><h3>هيرجاي</h3><p>الموسم 3</p></div>
+      </a>
+
+      <!-- 4 -->
+      <a href="yargi-ep80.html" class="card">
+        <div class="ep">حلقة 80</div>
+        <img src="https://m.media-amazon.com/images/MV5BODg4YjQ2ZTctMjA2Yi00YjA1LWE1NDktN2Q4ZjA5ZjQ2YzA0XkEyXkFqcGc@._V1_.jpg" alt="Yargi">
+        <div class="info"><h3>القضاء</h3><p>الموسم 3</p></div>
+      </a>
+
+      <!-- 5 -->
+      <a href="sahane-ep45.html" class="card">
+        <div class="ep">حلقة 45</div>
+        <img src="https://m.media-amazon.com/images/MV5BNjA4YjQ2ZTctMjA2Yi00YjA1LWE1NDktN2Q4ZjA5ZjQ2YzA0XkEyXkFqcGc@._V1_.jpg" alt="Sahane">
+        <div class="info"><h3>شاهد عيان</h3><p>الموسم 2</p></div>
+      </a>
+
+      <!-- 6 -->
+      <a href="kizilcik-ep60.html" class="card">
+        <div class="ep">حلقة 60</div>
+        <img src="https://m.media-amazon.com/images/MV5BOWUxZTkzMzYtNjA5MS00ZDdhLWIyMTYtMTBhYWEzY2Q4YjA0XkEyXkFqcGc@._V1_.jpg" alt="Kizilcik">
+        <div class="info"><h3>التوت الأحمر</h3><p>الموسم 2</p></div>
+      </a>
+
+      <!-- 7 -->
+      <a href="yali-ep70.html" class="card">
+        <div class="ep">حلقة 70</div>
+        <img src="https://m.media-amazon.com/images/MV5BMzE3YzY0ZTAtZjQ4Yi00MjYwLTg3YTItZjY3MzU4ZjU0MjQyXkEyXkFqcGc@._V1_.jpg" alt="Yali">
+        <div class="info"><h3>الطائر الرفراف</h3><p>الموسم 3</p></div>
+      </a>
+
+      <!-- 8 -->
+      <a href="hudutsuz-ep30.html" class="card">
+        <div class="ep">حلقة 30</div>
+        <img src="https://m.media-amazon.com/images/MV5BODg4YjQ2ZTctMjA2Yi00YjA1LWE1NDktN2Q4ZjA5ZjQ2YzA0XkEyXkFqcGc@._V1_.jpg" alt="Hudutsuz">
+        <div class="info"><h3>بلا حدود</h3><p>الموسم 1</p></div>
+      </a>
+
+      <!-- 9 -->
+      <a href="kardeslerim-ep110.html" class="card">
+        <div class="ep">حلقة 110</div>
+        <img src="https://m.media-amazon.com/images/MV5BNjA4YjQ2ZTctMjA2Yi00YjA1LWE1NDktN2Q4ZjA5ZjQ2YzA0XkEyXkFqcGc@._V1_.jpg" alt="Kardeslerim">
+        <div class="info"><h3>اخوتي</h3><p>الموسم 4</p></div>
+      </a>
+
+      <!-- 10 -->
+      <a href="uc-kurus-ep20.html" class="card">
+        <div class="ep">حلقة 20</div>
+        <img src="https://m.media-amazon.com/images/MV5BOWUxZTkzMzYtNjA5MS00ZDdhLWIyMTYtMTBhYWEzY2Q4YjA0XkEyXkFqcGc@._V1_.jpg" alt="Uc Kurus">
+        <div class="info"><h3>ثلاث قروش</h3><p>الموسم 1</p></div>
       </a>
 
     </div>
