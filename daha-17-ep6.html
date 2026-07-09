@@ -2,34 +2,43 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>DAHA 17 الحلقة 6</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAHA 17 الحلقة 6 - قرمزي</title>
   <style>
-    body { background: #0d0d0d; color: #fff; font-family: 'Tahoma'; margin:0; }
-    .poster { width: 100%; height: 300px; object-fit: cover; }
-    .content { padding: 15px; text-align: center; }
-    h2 { color: #e50914; margin: 15px 0; }
-    .quality { background: #1a1a1a; padding: 20px; border-radius: 10px; margin: 15px 0; }
-    .btn { background: #e50914; color: white; padding: 12px 25px; margin: 8px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold; }
-    .btn.down { background: #28a745; }
+    body { background: #0d0d0d; color: #fff; font-family: 'Tahoma'; margin:0; text-align: center; }
+    header { background: #e50914; padding: 15px; }
+    .container { padding: 15px; }
+    h2 { color: #e50914; margin-bottom: 15px; }
+    .ad { margin: 15px 0; }
+    .btn { background: #e50914; color: white; padding: 12px 20px; border-radius: 8px; margin: 8px; display: inline-block; text-decoration: none; font-weight: bold; }
+    .btn:hover { background: #b20710; }
+    .video-box { background: #1a1a1a; padding: 15px; border-radius: 10px; margin: 15px 0; }
+    iframe { width: 100%; height: 250px; border: none; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <!-- الصورة ديالك هنا الفوق -->
-  <img src="daha17.jpg" class="poster" alt="DAHA 17">
-
-  <div class="content">
+  <header><h1>قرمزي</h1></header>
+  <div class="container">
     <h2>مشاهدة مسلسل في السابعة عشرة الحلقة 6</h2>
-    
-    <div class="quality">
-      <h3>اختر الجودة للمشاهدة</h3>
-      <a href="رابط_Adsterra" target="_blank" 
-         onclick="setTimeout(()=>{window.location='رابط_الفيديو_720'},2000)" class="btn">720p HD</a>
-      
-      <a href="رابط_Adsterra" target="_blank" 
-         onclick="setTimeout(()=>{window.location='رابط_الفيديو_480'},2000)" class="btn">480p</a>
+
+    <!-- إعلان Adsterra 1 فوق -->
+    <div class="ad">
+      <a href="رابط-الإعلان-ديالك-هنا" target="_blank" class="btn">شاهد الآن 480p</a>
+      <a href="رابط-الإعلان-ديالك-هنا" target="_blank" class="btn">شاهد الآن 720p HD</a>
     </div>
 
-    <a href="index.html" style="color:#aaa">← الرجوع</a>
+    <div class="video-box">
+      <p>اختر الجودة للمشاهدة</p>
+      <!-- حط رابط الفيديو ديالك هنا -->
+      <iframe src="رابط-الفيديو-ديالك" allowfullscreen></iframe>
+    </div>
+
+    <!-- إعلان Adsterra 2 تحت -->
+    <div class="ad">
+      <a href="رابط-الإعلان-ديالك-هنا" target="_blank" class="btn">تحميل الحلقة</a>
+    </div>
+
+    <a href="index.html">العودة للصفحة الرئيسية</a>
   </div>
 </body>
 </html>
