@@ -36,8 +36,8 @@
     <!-- صندوق اختيار الجودة -->
     <div class="quality-box" id="qualityBox">
       <p style="margin-bottom:15px; font-size:18px;">اختر الجودة للمشاهدة</p>
-      <button class="btn" onclick="showVideo('480')">مشاهدة 480p</button>
-      <button class="btn" onclick="showVideo('720')">مشاهدة 720p HD</button>
+      <button class="btn" onclick="showVideo()">مشاهدة 480p</button>
+      <button class="btn" onclick="showVideo()">مشاهدة 720p HD</button>
     </div>
 
     <!-- صندوق الفيديو مخفي فاللول -->
@@ -55,25 +55,4 @@
   </div>
   
   <!-- كود Bar Social -->
-  <script src='https://pl30247613.effectecpmnetwork.com/a8/94/01/a89491d6a440f70a9f26ba82777652.js'></script>
-  
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const videoLink = params.get('video');
-    document.getElementById('title').innerText = params.get('title');
-
-    // منين يضغط على الزر
-    function showVideo(quality) {
-      // 1. فتح الإعلان Popunder
-      window.open('https://www.effectecpmnetwork.com/your-ad-link', '_blank');
-      
-      // 2. إخفاء الأزرار وإظهار الفيديو
-      document.getElementById('qualityBox').style.display = 'none';
-      document.getElementById('videoBox').style.display = 'block';
-      
-      // 3. تشغيل الفيديو
-      document.getElementById('video').src = videoLink;
-    }
-  </script>
-</body>
-</html>
+  <script src='https://pl30247613.effectec
