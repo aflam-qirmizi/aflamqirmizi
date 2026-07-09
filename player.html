@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>المشغل - قرمزي</title>
+<style>
+    body{background:#000;color:#fff;font-family:'Tajawal';text-align:center}
+    header{padding:15px;background:#111;border-bottom:2px solid #ff0000}
+    .logo a{color:#ff0000;text-decoration:none;font-size:24px;font-weight:bold}
+    .player{max-width:900px;margin:30px auto}
+    video{width:100%;border-radius:10px}
+    .title{margin:15px 0;font-size:22px}
+    .next-prev{margin-top:20px}
+    .btn{background:#ff0000;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;margin:0 10px}
+</style>
+</head>
+<body>
+<header><div class="logo"><a href="index.html">🐺 قرمزي</a></div></header>
+
+<div class="player">
+    <h2 class="title">وادي الذئاب الكمين - الحلقة 310</h2>
+    
+    <!-- حط رابط الفيديو ديالك هنا -->
+    <video controls poster="thumb310.jpg">
+        <source src="رابط_الفيديو_310.mp4" type="video/mp4">
+        المتصفح ديالك ما كيدعمش الفيديو
+    </video>
+
+    <div class="next-prev">
+        <a href="player.html?ep=309" class="btn">الحلقة السابقة</a>
+        <a href="player.html?ep=311" class="btn">الحلقة التالية</a>
+    </div>
+</div>
+</body>
+</html>
